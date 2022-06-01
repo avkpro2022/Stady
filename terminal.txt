@@ -1,0 +1,19 @@
+
+1) MacBook-Air-Andrej:~ apple$ pwd
+/Users/apple
+ # посмотреть где я
+
+2) MacBook-Air-Andrej:~ apple$ mkdir foldername
+# создать папку
+
+3) MacBook-Air-Andrej:~ apple$ cd foldername
+# зайти в папку
+
+4) MacBook-Air-Andrej:foldername apple$ mkdir orange{1,2,3}
+# создать три папки
+
+5) MacBook-Air-Andrej:foldername apple$ cd orange1
+# зайти в папку
+
+6) MacBook-Air-Andrej:orange1 apple$ touch pear{1,2,3}.txt grape{1,2}.json
+# создать 5 файлов
