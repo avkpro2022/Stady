@@ -1,5 +1,3 @@
-CheckLists_structura.txt
-
 Регистрация
 
 Соцсети
@@ -28,5 +26,3 @@ CheckLists_structura.txt
 Подписка
 
 Удаление аккаунта
-
-
