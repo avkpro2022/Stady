@@ -21,7 +21,7 @@ tf_2.txt со следующими строками:
 cat > tf_2.txt
 - the first 1
 - the second 2
-- the third 3
+- the third 3 Enter
 Ctrl + D
 
 # 7. Зайти в папку inner_dir_1
@@ -32,34 +32,36 @@ cat > tf_3.txt
 The first line
 The second line
 The Third line
-The fourth line
+The fourth line Enter
 Ctrl + D
 
 # 9-10. Через cat добавить в текстовый файл tf_3.txt строку
 cat >> tf_3.txt
-“the second 2”
+“the second 2” Enter
 Ctrl + D
 
 # 11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
 cat >> ../tf_2.txt
-“the sec 3”
+“the sec 3” Enter
 Ctrl + D
 
 # 12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2”
 cat >> tf_3.txt
-“the SeCoNd 2”
+“the SeCoNd 2” Enter
 Ctrl + D
 
 # 13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
 cat >> ../tf_2.txt
-“the seConD 2”
+“the seConD 2” Enter
 Ctrl + D
 
 # 14. Сделать текстовый файл tf_4.txt в котором будет 15 строк
-cat >> tf_4.txt
+cat >> tf_4.txt (добавил 15 строк)
+ctrl + D
 
 # 15. Сделать текстовый файл tF_5.txt в котором будет 13 строк.
-cat >> tF_5.txt
+cat >> tF_5.txt (добавил 13 строк)
+ctrl + D
 
 # 16. Вывести список всех файлов в папке
 ls
@@ -74,7 +76,7 @@ cat inner_dir_1/tf_3.txt
 find */tf_4.txt или (find . -name tf_4.txt)
 
 # 20. Отчистить файл tf_4.txt от содержимого без удаления самого файла
-cat /dev/null > inner_dir_1/tf_4.txt
+cat /dev/null > inner_dir_1/tf_4.txt (или > inner_dir_1/tf_3.txt)
 
 # 21. Найти путь к файлам у которых есть  “tf” в названии
 find . -name "*tf*"
@@ -96,19 +98,19 @@ grep -w "sec" *.txt
 
 # 26. Найти строки в файлах где есть только комбинация букв “sec” в любом 
 регистре в текущей папке
-grep -i "sec" *.txt
+grep -iw "sec" *.txt
 
 # 27. Найти строки в файлах где есть комбинация букв “second” в текущей 
 папке
-grep -w "second" *.txt
+grep second *.*
 
 # 28. Найти строки в файлах где есть комбинация букв “second” в любом 
 регистре в текущей папке
-grep -iw "second" *.txt
+grep -i second *.*
 
 # 29. Найти строки в файлах где есть комбинация букв “second” во всех 
 папках ниже уровнем
-grep second inner_dir_1/*
+grep -i second inner_dir_1/*
 
 # 30. Найти только путь и название файла в строках которых есть комбинация 
 букв “second” в текущей папке
